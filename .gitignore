@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Sass compilation files
+.sass-cache/
+css/*.map
+
+# Environment files
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

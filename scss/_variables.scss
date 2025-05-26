@@ -1,0 +1,27 @@
+// Colors
+$primary-color: #2b1055;
+$secondary-color: #7597de;
+$white: #fff;
+$black: #333;
+$error-color: #ff4d4d;
+$success-color: #2ecc71;
+$warning-color: #ffa500;
+
+// Gradients
+$dark-gradient: linear-gradient(-45deg, #2b1055, #7597de, #a18cd1, #471069);
+$light-gradient: linear-gradient(-45deg, #f5f7fa, #e4e8f0, #d9e0e8, #c8d4e3);
+
+// Glassmorphism
+$glass-bg: rgba(255, 255, 255, 0.2);
+$glass-border: rgba(255, 255, 255, 0.2);
+$glass-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+$glass-blur: blur(15px);
+
+// Spacing
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+
+// Breakpoints
+$breakpoint-sm: 480px;
+$breakpoint-xs: 360px;

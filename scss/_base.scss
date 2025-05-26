@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: $dark-gradient;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  position: relative;
+  color: $white;
+  
+  &.light-mode {
+    background: $light-gradient;
+    color: $black;
+  }
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.dots::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.8) 1px, transparent 0),
+    radial-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 0),
+    radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 0);
+  background-size: 20px 20px, 30px 30px, 40px 40px;
+  background-position: 0 0, 10px 10px, 20px 20px;
+  opacity: 0.3;
+  animation: moveDots 60s linear infinite;
+  z-index: 0;
+  
+  .light-mode & {
+    background-image:
+      radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 0),
+      radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 0),
+      radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 0);
+  }
+}
+
+@keyframes moveDots {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(-20px) translateX(-20px); }
+}

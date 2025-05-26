@@ -1,0 +1,43 @@
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  .toggle-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: $glass-blur;
+    border: 1px solid $glass-border;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    
+    .light-mode & {
+      color: $black;
+      background: rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .theme-text {
+    font-size: 14px;
+    color: $white;
+    .light-mode & {
+      color: $black;
+    }
+  }
+}
