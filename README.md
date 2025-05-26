@@ -15,8 +15,8 @@ Modern responsive authentication UI with dark/light mode toggle and password str
 ## Installation
 1. Clone repository:
    ```bash
-   git clone https://github.com/yourname/glassmorphism-login.git
-   cd glassmorphism-login
+   git clone [https://github.com/yourname/glassmorphism-login.git
+   cd glassmorphism-login](https://github.com/RestartCreatively/Animated-Glassmorphism-Login-Form.git)
    
 ## Installation Dependencies
     npm install
